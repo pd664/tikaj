@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        
+            <div id="app">
+                Message is:  {{message}} {{message2}}
+              </div>
+        
+        
+    </body>
+    <script>
+        const div = document.querySelector('div')
+        document.body.innerHTML = document.body.innerHTML.replace("{{message}}", "hello");
+        document.body.innerHTML = document.body.innerHTML.replace("{{message}}", "world");
+    </script>
+</html>
